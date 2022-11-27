@@ -1,0 +1,191 @@
+@media only screen and (max-width:767px){
+    .conteneur{
+        padding: 20px 0;
+    }
+    /*----------------------------------------------- header -----------------------------------------------------------------------------------*/
+
+    .header{
+        flex-direction: column;
+    }
+    .logo {
+        display: flex;
+        justify-content: center;
+    }
+    .menu{
+        justify-content: space-between;
+        padding-left: 0;   
+        width: 100%;    
+    }
+
+    nav li{
+        margin: 0 ;
+        
+    }
+    nav{
+        display: flex;
+        justify-content: center;
+    }
+    .menu a{
+        border-bottom: 3px solid rgb(217,217, 217);
+        width: 100%;
+        display: flex;
+        justify-content: center;        
+    }
+
+    .menu li{
+        width: 50%;
+    }
+    nav a:hover{
+        border-top: none;
+        border-bottom: 3px solid #0065FC;
+        text-decoration: none;
+    }
+    /*----------------------------------------------- fin header -------------------------------------------------------------------------------*/
+    /*---------------------------------------- filtre et recherche -----------------------------------------------------------------------------*/
+       .barre{
+        padding: 0 20px;
+    }
+    .barre .titre-gras{        
+        font-size: revert;
+    }
+    
+    
+    .filtre{
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: baseline;
+        padding: 0 20px;
+    }
+    .filtre .titre-gras{
+        width: 100%;
+    }
+
+    .bouton-recherche{
+        display: none;
+    }
+
+    .loupe{
+        display: flex;
+        background-color: #0065FC;
+        border-radius: 15px;
+        border:none;
+        justify-content: center;
+        align-items: center;
+        margin-left: -10px;
+        padding: 10px;
+    }
+    .loupe:hover{
+        background-color: #DEEBFF;
+    }
+    .icone-blanche{
+        color: white;
+    }
+    .bouton-filtre{
+        margin-bottom: 15px;
+        margin-left: inherit;
+        margin-right: auto;
+    }
+    .information{
+        padding-left: 10px;
+    }
+    .information .info{
+        margin-left: -5px;
+    }
+    /*--------------------------------------- fin filtre et recherche --------------------------------------------------------------------------*/
+    /*------------------------------------------------- HEBERGEMENT / POPULAIRE --------------------------------------------------------------------*/
+    .hebergements-populaires{
+        flex-direction: column-reverse;
+    }
+                /********************************** HEBERGEMENT *****************************************************************/
+    .l1, .l2 {
+        flex-direction: column;
+        width: 100%;
+        padding: 0 20px;
+    }
+    .hebergements{
+        background-color: white;   
+        padding: 0;
+        width: 100%;
+    }
+    .hebergements h2{
+        margin-left: 15px;
+    }
+
+    .hebergements a{
+        width: 100%;
+    }
+
+    .hebergement{
+        margin: 0 0 15px 0;
+        width: 100%;
+        box-shadow: 2px 1px 1px 1px #F2F2F2;
+    }
+
+    .img-hebergement{
+        width: 100%;
+    }
+    .l1 a, .l2 a{
+        display: flex;
+        justify-content: center;
+    }
+
+    .affichez{
+        text-align: left;
+        display: block;
+        margin-left: 30px;
+    }
+                 /******************************** FIN HEBERGEMENT ***************************************************************/
+                
+                
+                /******************************** POPULAIRE *********************************************************************/
+
+    .populaires{
+        border-radius: 0;
+        width: 100%;
+    }
+                /******************************* FIN POPULAIRE *****************************************************/
+ /*--------------------------------------------- FIN HERBERGEMENT / POPULAIRE -------------------------------------------------------------------*/
+ /*-------------------------------------------------------- ACTIVITE --------------------------------------------------------------------------*/
+    .activite-a-marseille{
+        padding: 0 20px;
+    }
+        
+    .grande{
+        height: 225px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .petite{
+        margin-bottom: -10px;
+        width: 100%;
+    }
+    .img-activite{
+        height: 175px;
+        width: 100%;
+    }
+    .ecart{
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .activites{
+        flex-direction: column;   
+    }
+    .activites a{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .sous-activite{
+        width: 100%;
+    }
+ /*------------------------------------------------------- FIN ACTIVITE ------------------------------------------------------------------------*/
+ /*--------------------------------------------------------- FOOTER ---------------------------------------------------------------------------*/
+    .footer{
+        flex-direction: column;
+    }
+    .propos{
+        padding-left: 20px;
+    }
+/*----------------------------------------------------------- FIN FOOTER -----------------------------------------------------------------------*/
+}
+

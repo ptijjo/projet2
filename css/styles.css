@@ -1,0 +1,419 @@
+html, body{
+    font-family: "Raleway";
+    color: black;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+*{
+    box-sizing: border-box;
+}
+
+.conteneur{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding:20px;
+}
+
+.icone-bleue{
+    color: #0065FC;
+}
+
+.icone-grise{
+        color: rgb(217, 217, 217);
+}
+
+ul{
+    display: flex;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.info-photo{
+    font-weight: normal;
+}
+
+h3{
+    font-size: medium;
+}
+
+h2{
+    font-size: large;
+}
+/*---------------------------------------------------- HEADER ----------------------------------------------------------------------------------*/
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav{
+    display: block;   
+}
+
+
+nav li{
+    margin-left: 30px;
+}
+
+.menu a{
+    padding: 33px;
+}
+
+nav a:hover{
+    border-top: 3px solid #0065FC;
+}
+  
+.header img{
+    width: 30%;
+    object-fit: contain;
+}
+
+/*------------------------------------------------------ FIN HEADER ----------------------------------------------------------------------------*/
+.hebergement-populaire-recherche{
+    display: flex;
+    flex-direction: column;
+}
+/*---------------------------------------------------- RECHERCHE ET FILTRE --------------------------------------------------------------------*/
+.recherches{    
+    flex-direction: column;
+    align-content: space-between;
+}
+.loupe{
+    display: none;  
+    cursor: pointer; 
+}
+.bouton-recherche{
+    background-color: #0065FC;
+    color: white;
+    font-weight: bold;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+.bouton-recherche:hover{
+    background-color: #DEEBFF;
+}
+.localisation{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+.localisation:hover{
+    background-color: #DEEBFF;
+}
+.recherche{
+    border: 1px solid #F2F2F2;
+    font-weight: bold;
+    color: black;
+    max-width: 72%;
+}
+.total-barre{
+    margin-bottom: 15px;
+}
+.recherches, .total-barre, .filtre, .information{
+    display: flex;
+}
+.filtre{
+    align-items: center;
+    font-weight: bold;
+}
+.bouton-filtre{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 2%;
+    height: 37px;
+    border-radius: 25px;
+    border: 3px solid rgb(217, 217, 217);
+    background-color: white;
+    align-items: center;
+    font-weight: bold;  
+    font-size: small;
+    cursor: pointer;
+}
+.bouton-filtre__nom{
+padding: 10px 20px 10px 0;
+}
+
+.bouton-filtre:hover{
+    background-color: orange;
+}
+.infos{
+    background-color: white;
+    border: 1px solid #F2F2F2;
+    margin-right: 20px;
+    border-radius: 50px;
+    height: 30px;
+    width: 30px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.infos:hover{
+    background-color: orange;
+}
+.information{
+    align-items: center;
+}
+.filtre p{
+    font-weight: bold;
+}
+#economique,#famille,#animaux,#romantique{
+    border-radius:50%;
+    background-color: #DEEBFF;
+    height: 37px;
+    width: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin: 0 10px 0 -10px; 
+}
+/*--------------------------------------------------- FIN RECHERCHE ET FILTRE ------------------------------------------------------------------*/
+/*------------------------------------------------- HEBERGEMENT / POPULAIRE --------------------------------------------------------------------*/
+.hebergements-populaires{
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+                /********************************** HEBERGEMENT *****************************************************************/
+.hebergements{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #F2F2F2;
+    border-radius: 25px;
+    padding: 15px 0 15px 15px;
+    width: 64%; 
+}
+.l1 , .l2{
+    display: flex;
+    width: 98%;
+    justify-content: space-between;
+}
+.info-photo{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -10px;
+}
+.l1 h3, .l2 h3, .info-photo{
+    padding: 0 0 0 10px;
+}
+.prix{
+    width: 100%;
+    margin: 0 0 5px 0;
+}
+
+.hebergements a{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    width: 32%;
+}
+.hebergement{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    background-color: white;
+    border-radius: 25px;
+    margin: 0 15px 15px 0;
+    width: 100%;
+}
+.hebergement:hover{
+    background-color: orange;
+}
+
+.img-hebergement{
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+                
+                /******************************** FIN HEBERGEMENT ***************************************************************/
+                
+                
+                /******************************** POPULAIRE *********************************************************************/
+                
+.populaires header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.populaires{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 25px;
+    background-color: #F2F2F2;
+    align-content: space-between;
+    border-radius: 25px;    
+    width: 33%;
+}
+
+.populaire{
+    display: flex;
+    padding: 5px;
+    background-color: white;
+    border-radius: 25px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.populaires a {
+    width: 100%;
+}
+
+.populaire:hover{
+    background-color: orange;
+}
+
+.img-populaire{
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    width: 35%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.populaire .prix{
+    width: 100%;
+    display: block;
+    margin-bottom: 5px;
+    min-width: 154px;
+}
+.model{
+    padding-left: 10px;
+    /*width: 50%;*/
+    min-width: 159px;
+}
+
+.populaire .info{
+    margin-top: -10px;
+}
+
+.populaire .note{
+    margin-top: 45px;
+}
+                
+                /******************************* FIN POPULAIRE *****************************************************************/
+                
+                
+/*--------------------------------------------- FIN HERBERGEMENT / POPULAIRE ----------------------------------------------------*/
+/*--------------------------------------------- ACTIVITE ----------------------------------------------------------------------*/
+
+.titre-activite{
+    margin-left: 30px;
+    }
+    .activites{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 0 30px 0;
+        justify-content: space-between;    
+        width: 100%;
+    }
+    
+    .activites a{
+        width: 23%;
+    }
+    
+    .activite{
+        border-radius: 25px; 
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+    }
+    
+    .grande:hover, .sous-activite:hover{
+        background-color: orange;
+    }
+    
+    .activite h3{
+        margin-left: 10px;
+    }
+    .img-activite{
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+    }
+    .sous-activite{
+        display: flex;
+        flex-direction: column;
+        border-radius: 25px;
+        height: 225px;
+    
+    }
+    .ecart{
+        margin-bottom: 50px;
+    }
+    
+    .grande, .sous-activite{
+        box-shadow: 2px 1px 1px 1px #F2F2F2;
+    }
+    
+    .petite{
+        border: none;
+        height: 500px;
+        width: 23%;
+    }
+
+    .petite a{
+        width: 100%;
+    }
+    .grande, .petite{
+        margin-bottom: 30px;
+    } 
+    .img-sousactiv{
+        width: 100%;
+        height: 175px;
+        object-fit: cover;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+    }
+    
+/*------------------------------------------- FIN ACTIVITE ---------------------------------------------------------*/
+
+
+/*--------------------------------------------------------- FOOTER -----------------------------------------------*/
+.footer{
+    display: flex;
+    background-color: #F2F2F2;
+    padding: 30px;
+}
+
+.propos{
+    margin-right: 20%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+}
+
+.propos .titre-gras{
+    margin-bottom: 0;
+    width: 150%;
+}
+.footer li {
+    text-decoration: none;
+    margin-bottom: 5px;
+    width: 150%;
+    
+}
+
+.propos ul{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin-top: 5px;
+}
+/*----------------------------------------------------------- FIN FOOTER -------------------------------------------------------*/
+    
